@@ -33,15 +33,15 @@ body
 
 .img-responsive
 	display: block
-	max-width: 100%
+	max-width: 33%
 	height: auto
-	&.img-width
+	img
 		width: 100%
 
 .text-center
 	text-align: center
 
-b, strong
+strong
 	font-weight: bold
 
 p
@@ -57,24 +57,36 @@ h1
 	height: 100px
 h1:first-letter
 	color: $accent
+span
+	display: inline-block
+span:first-letter
+	display: inline-block
+	color: $accent
 h3
 	font-size: 1.500em
 	color: #888
 	letter-spacing: 2
-.letter
-	height: 100px
-	display: inline-block
-.letter:first-letter
-	color: $accent
 
 h2
 	font-size: 2.500em
 	color: #0f0f0f
 
 /* main setting*/
+ul
+	padding: 0
+.button
+	background-color: $accent
+	color: #fff
+	height: 30px
+	width: 98px
+	border: none
+	text-transform: capitalize
 
-.header, .footers
+.footers
 	background-color: #272727
+.header
+	background-image: radial-gradient(#5f5d5d , #272727 50%)
+	height: 560px
 #about_me
 	background-color: #eaeaea
 

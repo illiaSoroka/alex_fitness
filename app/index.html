@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
   <head>
     <meta charset="utf-8">
     <!-- <base href="/">-->
-    <title>projeccz</title>
+    <title>FitLife Alex</title>
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -21,17 +21,31 @@
     <!-- Custom HTML-->
     <div class="wrapper">
       <header class="header">
-        <div class="head_mnu">
+        <div id="head_mnu">
           <article class="container">
             <section class="heading">
-              <h1>Fit<span class='letter'>Life</span> <span class='letter'>Alex</span></h1>
-              <h3>Fitness Trainer</h3>
+              <h1>FitLife <span>Alex</span></h1>
+              <h3>Fitness Trainer </h3>
             </section>
+            <nav class="nav">
+              <ul class="ul">
+                <li class="list"><a class="link" href="#">home</a></li>
+                <li class="list"><a class="link" href="#">about</a></li>
+                <li class="list"><a class="link" href="#">folio</a></li>
+                <li class="list"><a class="link" href="#">services</a></li>
+                <li class="list"><a class="link" href="#">news</a></li>
+                <li class="list"><a class="link" href="#">contact</a></li>
+              </ul>
+            </nav>
           </article>
         </div>
         <div class="head">
           <article class="container">
-            <div class="gallery"></div>
+            <div class="gallery">
+              <div class="w33 img-responsive"><img class="img-width" src="img/photo1.png" alt=""/></div>
+              <div class="w33 img-responsive"><img class="img-width" src="img/photo2.png" alt=""/></div>
+              <div class="w33 img-responsive"><img class="img-width" src="img/photo3.png" alt=""/></div>
+            </div>
           </article>
         </div>
       </header>
@@ -40,9 +54,31 @@
           <article class="container">
             <section class="about_me">
               <h2>About Me</h2>
+              <div class="img-res"><img class="photo4" src="img/photo4.png" alt="photo4"/></div>
+              <p>This Photographer’s Portfolio is one of free website templates Portfolio is one of free website templates </p>
+              <button class="button"> 
+                <p>Read More</p>
+              </button>
             </section>
             <section class="experience">
               <h2>Experiences</h2>
+              <ul>
+                <li>
+                  <p class="bold">Fashion show</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </li>
+                <li>
+                  <p class="bold">animals photo session</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </li>
+                <li>
+                  <p class="bold">sport shots</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </li>
+              </ul>
+              <button class="button">
+                <p>Read More</p>
+              </button>
             </section>
             <section class="whats_new">
               <h2>Whats New</h2>
@@ -78,7 +114,7 @@
       var scr = {"scripts":[
       {"src" : "node_modules/jquery/dist/jquery.min.js", "async" : false},
       {"src" : "js/scripts.min.js", "async" : false},
-      ]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+      ]};
     </script>
   </body>
 </html>

@@ -2,7 +2,7 @@
   "name": "learn_gulp",
   "version": "1.0.0",
   "description": "636",
-  "main": "index.js",
+  "main": "scripts.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
