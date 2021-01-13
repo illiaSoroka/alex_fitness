@@ -1,0 +1,32 @@
+extends main.pug
+
+include ../blocks/header/header.pug
+
+include ../blocks/head_mnu/head_mnu.pug
+
+include ../blocks/head/head.pug
+
+include ../blocks/about_me/about_me.pug
+
+include ../blocks/contact/contact.pug
+
+include ../blocks/footer/footer.pug
+
+
+
+block title
+	title projeccz
+
+block pagecontent
+
+	+header()
+
+		+head_mnu()
+
+		+head()
+
+	+about_me()
+
+	+contact()
+	
+	+footer()
