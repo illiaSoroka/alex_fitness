@@ -2,7 +2,6 @@
 @import "fonts"
 @import "libs"
 
-@import "../blocks/header/header.sass"
 @import "../blocks/head_mnu/head_mnu.sass"
 @import "../blocks/head/head.sass"
 @import "../blocks/about_me/about_me.sass"
@@ -45,4 +44,49 @@ body
 b, strong
 	font-weight: bold
 
+p
+	font-size: 0.875em
+
+h1, h2, h3
+	font-family: 'light', sans-serif
+	font-weight: 300
+
+h1
+	font-size: 4.625em
+	color: #fff
+	height: 100px
+h1:first-letter
+	color: $accent
+h3
+	font-size: 1.500em
+	color: #888
+	letter-spacing: 2
+.letter
+	height: 100px
+	display: inline-block
+.letter:first-letter
+	color: $accent
+
+h2
+	font-size: 2.500em
+	color: #0f0f0f
+
+/* main setting*/
+
+.header, .footers
+	background-color: #272727
+#about_me
+	background-color: #eaeaea
+
+.container
+	margin: 0 10%
+	width: 80%
+	height: auto
+	display: flex
+	justify-content: space-between
+
+.footer, .message
+	width: 66%
+.contact, .social_network
+	width: 33%
 @import "media" // Always at the end

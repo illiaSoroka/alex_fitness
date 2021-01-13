@@ -1,6 +1,5 @@
 extends main.pug
 
-include ../blocks/header/header.pug
 
 include ../blocks/head_mnu/head_mnu.pug
 
@@ -19,14 +18,18 @@ block title
 
 block pagecontent
 
-	+header()
+	.wrapper
 
-		+head_mnu()
+		header.header
 
-		+head()
+			+head_mnu()
 
-	+about_me()
+			+head()
+		
+		main.main
+			
+			+about_me()
 
-	+contact()
-	
-	+footer()
+			+contact()
+		footer
+			+footer()
