@@ -18,7 +18,7 @@
 body
 	font-size: 16px
 	min-width: 320px
-	position: relative
+
 	line-height: 1.65
 	font-family: $default-font
 	overflow-x: hidden
@@ -31,16 +31,14 @@ body
 			border-color: red
 		&:required:valid
 			border-color: green
-.img-width, .img-responsive
-	position: relative
-	z-index: 3
+
 .img-responsive
 	display: block
 	max-width: 100%
 	height: auto
-
 	img
 		width: 100%
+		display: block
 
 .text-center
 	text-align: center
@@ -94,13 +92,18 @@ ul
 	font-family: inhirit
 	font-size: 16px
 
-.button:hover
+.button:hover, .button:focus
 	background-color: #0fb1e7
 
 #footer
 	background-color: #272727
 .header
-	background-image: radial-gradient(#5f5d5d , #272727 50%)
+	background-image: url(../img/gym.jpg)
+	background-size: cover
+	background-position: center
+	width: 100%
+.bgc
+	background-color: rgba(39, 39, 39, 0.7)
 
 #about_me
 	background-color: #eaeaea
@@ -112,8 +115,6 @@ ul
 	display: flex
 	justify-content: space-between
 	flex-wrap: wrap
-	position: relative
-	z-index: 1
 
 .message
 	width: 66%
