@@ -22,6 +22,7 @@ body
 	line-height: 1.65
 	font-family: $default-font
 	overflow-x: hidden
+
 	color: $text
 	input, textarea
 		border: #666 1px solid
@@ -30,11 +31,14 @@ body
 			border-color: red
 		&:required:valid
 			border-color: green
-
+.img-width, .img-responsive
+	position: relative
+	z-index: 3
 .img-responsive
 	display: block
-	max-width: 33%
+	max-width: 100%
 	height: auto
+
 	img
 		width: 100%
 
@@ -47,21 +51,26 @@ strong
 p
 	font-size: 0.875em
 
+a
+	text-decoration: none
+
 h1, h2, h3
 	font-family: 'light', sans-serif
 	font-weight: 300
+	line-height: 1.2
 
 h1
 	font-size: 4.625em
 	color: #fff
 	height: 100px
+	span:first-letter
+		display: inline-block
+		color: $accent
 h1:first-letter
 	color: $accent
 span
 	display: inline-block
-span:first-letter
-	display: inline-block
-	color: $accent
+
 h3
 	font-size: 1.500em
 	color: #888
@@ -81,12 +90,18 @@ ul
 	width: 98px
 	border: none
 	text-transform: capitalize
+	cursor: pointer
+	font-family: inhirit
+	font-size: 16px
 
-.footers
+.button:hover
+	background-color: #0fb1e7
+
+#footer
 	background-color: #272727
 .header
 	background-image: radial-gradient(#5f5d5d , #272727 50%)
-	height: 560px
+
 #about_me
 	background-color: #eaeaea
 
@@ -96,9 +111,11 @@ ul
 	height: auto
 	display: flex
 	justify-content: space-between
+	flex-wrap: wrap
+	position: relative
+	z-index: 1
 
-.footer, .message
+.message
 	width: 66%
-.contact, .social_network
-	width: 33%
+
 @import "media" // Always at the end

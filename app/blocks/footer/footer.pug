@@ -1,8 +1,17 @@
 mixin footer()
-	footer.footers
+	footer#footer
 		article.container
-			aside.footer
-				h4 footer
-			section.social_network
-				p instagram
+			.footers
+				section.social_network
+					
+					a(href="https://www.instagram.com/"  target="_blank") 
+						img(src="img/icons/instagram.svg", class="insta social_icon", alt="instagram")
+					a(href="https://gmail.com/" target="_blank") 
+						img(src="img/icons/gmail.svg", class="gmail social_icon",  alt="Gmail")
+					a(href="https://www.facebook.com/" target="_blank") 
+						img(src="img/icons/facebook.svg", class='facebook  social_icon' alt="FaceBook")
+				aside.footer
+					h4 Site developed by FrontEnd Developer <a href="https://www.instagram.com/ilysha_soroka/" target='_blanck'>Illia Soroka</a> in 2021
+				
+			
 
