@@ -104,6 +104,7 @@
 
 	.img-responsive:first-child
 		max-width: 80%
+
 	.img-responsive:nth-child(2n),
 	.img-responsive:nth-child(3n)
 		max-width: 50%
@@ -114,7 +115,13 @@
 
 // ≥540px
 @media only screen and (max-width: 540px)
-	/**/
+	.img-responsive:first-child
+		max-height: 220px
+	.img-responsive:nth-child(2n),
+	.img-responsive:nth-child(3n)
+		max-height: 185px
+	.button
+		width: 105px
 
 // ≥400px
 @media only screen and (max-width: 400px)
